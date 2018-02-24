@@ -4,7 +4,7 @@
 % Successive Nulling of Eigenvalues
 % Sam Safavi, Student Member, IEEE, andUsmanA.Khan, Senior Member, IEEE
 % http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6876198
-% 
+% Example 2 in the paper
 function Ra2sim2()
 clear;clc;
 %% Part 1
@@ -12,7 +12,6 @@ clear;clc;
 % W = mat[nNode, nNode]
 firstrow = [0 1 0 0 0 1];
 W=circulant(firstrow,1);
-%W= [0 0 0 0 0 1;0 0 0 0 0 1;0 0 0 0 0 1;0 0 0 0 0 1;0 0 0 0 0 1;1 1 1 1 1 0]
 % set initial state of the system 
 % x0 = [nNode,1]
 x0=[1 2 3 4 5 6]';
